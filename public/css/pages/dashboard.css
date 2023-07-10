@@ -1,0 +1,42 @@
+/* RETINA DISPLAY IMAGES */
+#main #main-inner {
+  padding: 1em; }
+  #main #main-inner #sidebar {
+    margin: 0 0 1.5em; }
+    #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu {
+      font-size: .875em;
+      margin: 0;
+      padding: 0; }
+      #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu li {
+        list-style: none;
+        list-style-type: none; }
+        #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu li a {
+          border-bottom: 1px solid #dcdcdc;
+          display: block;
+          padding: .5em; }
+          #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu li a .fa, #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu li a i {
+            margin: 0 1em 0 0; }
+          #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu li a:hover {
+            background: #f0f0f0 none no-repeat scroll 0 0; }
+  #main #main-inner #content-area table {
+    width: auto; }
+    #main #main-inner #content-area table tr th {
+      background: #ccc;
+      color: black;
+      font-weight: bold; }
+
+@media all and (min-width: 768px) {
+  #main #main-inner {
+    padding: 1em; }
+    #main #main-inner #sidebar {
+      float: left;
+      margin: 0 5% 1.5em 0;
+      width: 20%; } }
+
+@media all and (min-width: 960px) {
+  #main #main-inner {
+    padding: 2em 1em; }
+    #main #main-inner #sidebar #sidebar-inner ul.dashboard-menu {
+      font-size: 1em; } }
+
+/*# sourceMappingURL=dashboard.css.map */

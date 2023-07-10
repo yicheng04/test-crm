@@ -1,0 +1,363 @@
+/* RETINA DISPLAY IMAGES */
+#banner {
+  display: none; }
+
+#hero {
+  display: block; }
+
+#main #main-inner {
+  max-width: 100%;
+  padding: 0; }
+  #main #main-inner #content-area {
+    overflow: hidden;
+    padding: 0;
+    position: inherit; }
+
+.drivers-block {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1em 0.625em; }
+  .drivers-block h2 {
+    color: #044713;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1;
+    margin: 0 0 0.5em; }
+  .drivers-block h5 {
+    margin: 0 0 0.5em; }
+
+.divisions-wrapper {
+  zoom: 1;
+  margin: 0; }
+  .divisions-wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .divisions-wrapper .division {
+    background: #5a5959;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 0 2px;
+    position: relative;
+    text-align: center;
+    z-index: 0; }
+    .divisions-wrapper .division:hover .overlay {
+      background-color: rgba(4, 71, 19, 0.85); }
+    .divisions-wrapper .division .overlay {
+      transition: all 0.2s ease;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1; }
+    .divisions-wrapper .division a {
+      text-decoration: none; }
+      .divisions-wrapper .division a:hover {
+        text-decoration: none; }
+    .divisions-wrapper .division .block-content {
+      color: #fff;
+      padding: 1em 0.625em;
+      text-align: left;
+      text-decoration: none; }
+      .divisions-wrapper .division .block-content .icon {
+        float: left;
+        width: 50px; }
+      .divisions-wrapper .division .block-content h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25em;
+        font-weight: 500;
+        margin: 0 0 0.125em 60px; }
+      .divisions-wrapper .division .block-content p {
+        font-size: .875em;
+        font-weight: 400;
+        line-height: 1.375em;
+        margin: 0 0 0 60px; }
+      .divisions-wrapper .division .block-content:hover {
+        text-decoration: none; }
+
+.row-wrapper {
+  zoom: 1;
+  margin: 0 0 1px; }
+  .row-wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .row-wrapper .veterans-block {
+    background: url("/img/american-flag.png") no-repeat scroll -420px -450px;
+    padding: 1em; }
+    .row-wrapper .veterans-block .block-content {
+      background: #FFFFFF;
+      padding: 0.875em 0.625em;
+      text-align: center; }
+      .row-wrapper .veterans-block .block-content h2 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0 0 0.875em; }
+      .row-wrapper .veterans-block .block-content .btn {
+        width: auto; }
+  .row-wrapper .safety {
+    background: url("/img/road.png") no-repeat scroll 0 0/cover;
+    padding: 1em; }
+    .row-wrapper .safety .block-content {
+      background: rgba(220, 220, 220, 0.9);
+      padding: 0.875em 0.625em;
+      text-align: center; }
+      .row-wrapper .safety .block-content h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1;
+        margin: 0 0 0.875em; }
+      .row-wrapper .safety .block-content .btn {
+        width: auto; }
+
+.news-wrapper {
+  padding: 0 0.625em;
+  text-align: center; }
+  .news-wrapper .block-title {
+    border-bottom: 1px solid #b1b1b1;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0 2em;
+    padding: 0 0 0.375em;
+    text-align: center; }
+  .news-wrapper .blocks {
+    zoom: 1;
+    padding: 0 0.625em;
+    text-align: left; }
+    .news-wrapper .blocks:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .news-wrapper .blocks .view-all-btn {
+      zoom: 1;
+      clear: both;
+      margin: 0 0 2.5em;
+      text-align: center; }
+      .news-wrapper .blocks .view-all-btn:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .news-wrapper .blocks .view-all-btn .btn {
+        width: auto; }
+    .news-wrapper .blocks .block {
+      margin: 0 0 2.5em; }
+      .news-wrapper .blocks .block:last-child {
+        margin: 0; }
+      .news-wrapper .blocks .block.news-block {
+        font-size: .875em;
+        font-weight: 600;
+        line-height: 1.375em; }
+        .news-wrapper .blocks .block.news-block .date {
+          margin: 0 0 0.25em; }
+        .news-wrapper .blocks .block.news-block .title {
+          font-size: 1.25em;
+          margin: 0 0 0.5em; }
+          .news-wrapper .blocks .block.news-block .title a {
+            color: #000; }
+            .news-wrapper .blocks .block.news-block .title a:hover {
+              color: #044713; }
+        .news-wrapper .blocks .block.news-block .teaser img {
+          display: none; }
+
+@media all and (min-width: 480px) {
+  #banner {
+    display: block; } }
+
+@media all and (min-width: 768px) {
+  .drivers-block {
+    background: url("/img/driver-guitar.png") no-repeat scroll 98% bottom/400px auto;
+    padding: 2em 20em 2em 1.5em; }
+    .drivers-block h2 {
+      font-size: 2em;
+      margin: 0 0 0.75em; }
+  .news-wrapper {
+    margin: 0;
+    padding: 0; }
+    .news-wrapper .block-title {
+      font-size: 1.25em; }
+    .news-wrapper .blocks {
+      zoom: 1;
+      padding: 0; }
+      .news-wrapper .blocks:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+      .news-wrapper .blocks .block {
+        float: left;
+        margin: 0;
+        padding: 0 2%;
+        width: 33.333%; }
+        .news-wrapper .blocks .block.news-block {
+          margin: 0 0 3em; }
+  .divisions-wrapper {
+    background: #dcdcdc url("/img/logo-transparent.png") no-repeat scroll 95% 95%;
+    margin: 0 -1px; }
+    .divisions-wrapper .division {
+      background: transparent url("/img/guitar.png") no-repeat scroll 0 0/cover;
+      border: 1px solid #dcdcdc;
+      float: left;
+      margin: 0;
+      width: 50%;
+      z-index: 0; }
+      .divisions-wrapper .division:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%; }
+      .divisions-wrapper .division:hover .overlay {
+        background-color: rgba(4, 71, 19, 0.85); }
+      .divisions-wrapper .division.drivers {
+        background-image: url("/img/driver-bkgd.png"); }
+      .divisions-wrapper .division.lease {
+        background-image: url("/img/lease-bkgd.png"); }
+      .divisions-wrapper .division.part-time {
+        background-image: url("/img/parttime-bkgd.png"); }
+      .divisions-wrapper .division.intermodal {
+        background-image: url("/img/intermodal-bkgd.png"); }
+      .divisions-wrapper .division .overlay {
+        transition: all 0.2s ease;
+        background-color: rgba(0, 0, 0, 0.75);
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1; }
+      .divisions-wrapper .division .block-content {
+        bottom: 0;
+        color: #fff;
+        font-size: .75em;
+        line-height: 1.375em;
+        margin: 0;
+        padding: 2%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0; }
+        .divisions-wrapper .division .block-content .icon {
+          float: none;
+          display: inline-block;
+          padding: 1em 0;
+          width: 80px; }
+        .divisions-wrapper .division .block-content h2 {
+          font-size: 1.5em;
+          margin: 0 0 0.5em; }
+        .divisions-wrapper .division .block-content p {
+          font-size: 1em;
+          margin: 0;
+          padding: 0 4%; }
+  .row-wrapper .veterans-block {
+    padding: 1.5em 1em; }
+    .row-wrapper .veterans-block .block-content {
+      padding: 1.5em 1em; }
+      .row-wrapper .veterans-block .block-content h2 {
+        display: inline-block;
+        font-size: 1.75em;
+        position: relative; }
+        .row-wrapper .veterans-block .block-content h2:before {
+          color: #ed1c24;
+          content: "\2605";
+          display: block;
+          left: -1.75em;
+          position: absolute;
+          top: 0; }
+        .row-wrapper .veterans-block .block-content h2:after {
+          color: #ed1c24;
+          content: "\2605";
+          display: block;
+          right: -1.75em;
+          position: absolute;
+          top: 0; }
+  .row-wrapper .safety {
+    padding: 1.5em 1em; }
+    .row-wrapper .safety .block-content {
+      padding: 1.5em 2em;
+      text-align: left; }
+      .row-wrapper .safety .block-content h2 {
+        font-size: 2.25em; } }
+
+@media all and (min-width: 960px) {
+  .drivers-block {
+    background-size: 460px auto;
+    padding: 2em 30em 2em 1.5em; }
+  .divisions-wrapper .division .block-content {
+    font-size: .875em; }
+    .divisions-wrapper .division .block-content h2 {
+      font-size: 1.75em; }
+  .row-wrapper {
+    zoom: 1; }
+    .row-wrapper:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .row-wrapper .left, .row-wrapper .right {
+      float: left;
+      width: 50%; }
+    .row-wrapper .veterans-block .block-content h2 {
+      margin: 0 1em 0.875em; }
+      .row-wrapper .veterans-block .block-content h2:before {
+        left: -1em; }
+      .row-wrapper .veterans-block .block-content h2:after {
+        right: -1em; }
+  .news-wrapper {
+    position: relative; }
+    .news-wrapper .blocks .block {
+      float: left;
+      margin: 0;
+      width: 33.33%; }
+      .news-wrapper .blocks .block.news-block {
+        padding: 0 2em 0 0; } }
+
+@media all and (min-width: 1200px) {
+  .drivers-block {
+    background-size: inherit;
+    padding: 2em 36em 2em 1.5em; }
+  .divisions-wrapper .division {
+    width: 33.333%; }
+    .divisions-wrapper .division:before {
+      padding-top: 56.25%; }
+  .row-wrapper .veterans-block .block-content h2 {
+    margin: 0 0 0.875em; }
+    .row-wrapper .veterans-block .block-content h2:before {
+      left: -1.375em; }
+    .row-wrapper .veterans-block .block-content h2:after {
+      right: -1.375em; }
+  .news-wrapper .block-title {
+    margin: 0 0 3em; }
+  .news-wrapper .blocks {
+    padding: 0; }
+    .news-wrapper .blocks .block.news-block {
+      margin: 0 0 4em; }
+    .news-wrapper .blocks .view-all-btn .btn {
+      font-size: 1em; } }
+
+@media all and (min-width: 1400px) {
+  .row-wrapper .veterans-block .block-content h2 {
+    font-size: 2em; }
+  .divisions-wrapper .division .block-content {
+    font-size: 1em; }
+    .divisions-wrapper .division .block-content .icon {
+      width: 90px; }
+  .news-wrapper {
+    padding: 2em 0.625em; }
+    .news-wrapper .blocks .block.news-block {
+      padding: 0 2%; } }
+
+/*# sourceMappingURL=home.css.map */

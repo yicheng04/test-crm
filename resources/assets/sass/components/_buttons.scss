@@ -1,0 +1,63 @@
+button, .button, .btn, a.button, a.btn {
+  background: $button-color-back;
+	border: $button-border;
+	border-radius: $button-border-radius;
+	-webkit-border-radius: $button-border-radius;
+	color: $button-color-text;
+	display: inline-block;
+	font-family: $roboto;
+	font-size: 1em;
+	font-weight: 500;
+	margin: 0;
+	padding: .5em 1.5em;
+	text-align: center;
+	width: 100%;
+	&:hover {
+		background: $button-color-back-hover;
+	}
+	&.small {
+  	font-size: .75em;
+  	padding: .375em 1em;
+	}
+	&.gray {
+	  @include border-radius(100px);
+  	background: $light-gray;
+  	color: $black;
+  	display: inline-block;
+  	&:hover {
+    	background: darken( $light-gray, 2% );
+  	}
+	}
+	&.red {
+  	background: $red;
+  	&:hover {
+    	background: darken( $red, 4% );
+  	}
+	}
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  button, .button, .btn, a.button, a.btn {
+    width: auto;
+  }
+  
+}
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {}

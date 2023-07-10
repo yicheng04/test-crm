@@ -1,0 +1,368 @@
+#banner {
+  @include clearfix;
+  background: $banner-color-back;
+  margin: 0 auto;
+	position: relative;
+	top: 51px;
+	#banner-inner {
+	  background: $banner-inner-color-back;
+		margin: 0 auto;
+		max-width: $max-full-width;
+		padding: 0;
+		img {
+			width: 100%;
+		}
+		.flex-direction-nav { display: none; }
+		.flex-control-nav {
+  		bottom: 5px;
+		}
+		.flexslider {
+		  @include border-radius(0);
+		  background: transparent;
+		  border: none;
+  		margin: 0;
+		}
+		.owl-carousel {
+  		.owl-controls {
+  		  bottom: 2em;
+  		  left: 50%;
+  		  position: absolute;
+    		.owl-dots {
+    		  left: -50%;
+    		  position: relative;
+      		.owl-dot {
+      		  display: inline-block;
+      		  margin: 0 .5em;
+        		span {
+          		background: none no-repeat scroll 0 0 transparent;
+          		border: 2px solid #fff;
+          		border-radius: 100px;
+          		-webkit-border-radius: 100px;
+          		-moz-border-radius: 100px;
+          		display: block;
+          		height: 20px;
+          		width: 20px;
+        		}
+        		&.active {
+          		span {
+            		background: none no-repeat scroll 0 0 #fff;
+          		}
+        		}
+      		}
+    		}
+  		}
+		}
+	}
+}
+
+#hero {
+  @include clearfix;
+  background: $banner-color-back;
+  display: none;
+  margin: 0 auto;
+	position: relative;
+	top: 51px;
+	#hero-inner {
+  	background: transparent;
+		margin: 0 auto;
+		max-width: $max-full-width;
+		padding: 0;
+	}
+}
+
+.flexslider {
+  @include border-radius(0);
+  background: transparent;
+  border: none;
+	margin: 0;
+	.slides {
+  	li {
+  	  background: $black;
+  	  position: relative;
+    	.bg-img {
+    	  background: $black;
+      	position: relative;
+      	img {
+        	opacity: .7;
+        	-webkit-opacity: .7;
+      	}
+    	}
+    	.testimonial {
+    	  bottom: 1.875em;
+    	  color: $white;
+        font-family: $roboto-condensed;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1.25em;
+      	left: 3%;
+      	position: absolute;
+      	text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      	width: 94%;
+      	z-index: 800;
+    	}
+    	.driver-img {
+    	  bottom: 0;
+    	  left: 2%;
+      	position: absolute;
+      	width: 30%;
+      	z-index: 799;
+    	}
+  	}
+	}
+}
+
+.flex-control-nav {
+  bottom: 0;
+  left: 2%;
+  position: absolute;
+  text-align: left;
+  width: 98%;
+}
+.flex-control-paging {
+  li {
+    a {
+      background-color: rgba(255,255,255,.5);
+      &.flex-active {
+        background-color: rgba(255,255,255,1);
+      }
+      &:hover {
+        background-color: rgba(255,255,255,1);
+      }
+    }
+  }
+}
+.flex-direction-nav {display: none;}
+
+#driver-appl {
+  background: rgba( 0, 0, 0, .75 );
+  padding: .625em;
+}
+
+.driver-testimonial {display: none;}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+          font-size: 1.25em;
+      	}
+    	}
+  	}
+  }
+  
+}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  #banner {
+    top: 90px;
+  }
+  
+  #hero {
+    top: 90px;
+  }
+  
+  #driver-appl {
+    padding: .875em 1.125em;
+  }
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+          font-size: 1.5em;
+          line-height: 1.375em;
+        	left: 2%;
+        	width: 68%;
+      	}
+    	}
+  	}
+  }
+  
+}
+
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+      	  font-size: 2em;
+        	width: 78%;
+      	}
+    	}
+  	}
+  }
+  
+  .driver-testimonial {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    .testimonial {
+      bottom: 90px;
+      color: $white;
+      font-family: $roboto-condensed;
+      font-size: 1.5em;
+      font-weight: 600;
+      line-height: 1.375em;
+      padding: 0 .625em 0 1.5em;
+      position: absolute;
+      &:before {
+        color: $white;
+        content: "\0022";
+        font-family: $roboto-condensed;
+        font-size: 4em;
+        font-weight: 400;
+        left: 0;
+        position: absolute;
+        top: -0.313em;
+        -ms-transform: rotateX(180deg) rotateY(180deg);
+        -webkit-transform: rotateX(180deg) rotateY(180deg);
+        transform: rotateX(180deg) rotateY(180deg);
+      }
+    }
+    .driver-img {
+      display: block;
+      width: 400px;
+    }
+  }
+  
+}
+
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {
+  
+  #banner {
+    top: 118px;
+  }
+  
+  #hero {
+    overflow: hidden;
+    top: 118px;
+  }
+  
+  #driver-appl {
+    float: right;
+    padding: .25em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    z-index: 2;
+  }
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+      	  bottom: 2.5em;
+          font-size: 1.5em;
+          line-height: 1.375em;
+        	left: 2%;
+        	width: 35%;
+      	}
+    	}
+  	}
+  }
+  
+  .flex-control-nav {
+    bottom: .75em;
+    li {
+      a {
+        @include border-radius(100px);
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+  
+}
+
+
+
+@media all and (min-width: 1400px) {
+  
+  #driver-appl {
+    padding: .75em 1.25em;
+    right: 2%;
+    top: 5%;
+    width: 700px;
+  }
+  
+  .driver-testimonial {
+    left: 2%;
+    width: 640px;
+    .testimonial {
+      bottom: 2.25em;
+      font-size: 2em;
+      line-height: 1.25em;
+    }
+  }
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+      	  bottom: 2.25em;
+          font-size: 2em;
+          width: 40%;
+      	}
+    	}
+  	}
+  }
+  
+  .flex-control-nav {
+    bottom: 1.125em;
+    li {
+      a {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+  
+}
+
+
+@media all and (min-width: 1600px) {
+  
+  .flexslider {
+    .slides {
+    	li {
+      	.testimonial {
+      	  bottom: 2.5em;
+          font-size: 2.75em;
+          width: 45%;
+      	}
+    	}
+  	}
+  }
+  
+  .flex-control-nav {
+    bottom: 1.5em;
+    li {
+      a {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,83 @@
+#main {
+  @include clearfix;
+  background: $main-color-back;
+  position: relative;
+  top: 51px;
+	#main-inner {
+	  background: $main-inner-color-back;
+		max-width: $max-width;
+		margin: 0 auto;
+		padding: .625em;
+		#content-header {
+			#banner {
+				img {
+					width: 100%;
+				}
+			}
+			#breadcrumb {
+				margin-left: 10px;
+				margin-top: 0.75em;
+				color: $medium-gray;
+				font-size: 0.85em;
+				a {
+					color: $medium-gray;
+				}
+			}
+		}
+		#content-area {
+		  position: relative;
+		}
+	}
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  #main {
+    top: 90px;
+    #main-inner {
+  	  #content {
+    		&.sidebar {
+    		  float: left;
+    		  padding: 0;
+      		width: 75%;
+      		#content-area {
+        		padding: 0 4em 2em 0;
+      		}
+    		}
+  		}
+  		#content-area {
+  		  padding: 0 0 2em;
+  		  position: relative;
+  		}
+  		#sidebar {
+  			float: right;
+  			width: 25%;
+  		}
+  	}
+  }
+  
+}
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {
+  
+  #main {
+    top: 118px;
+  }
+  
+}

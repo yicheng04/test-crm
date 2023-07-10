@@ -1,0 +1,48 @@
+.blocks-row {
+  @include clearfix;
+  .block {
+    margin: 0 0 1.5em;
+    .block-title {
+      font-size: 1.5em;
+      margin: 0 0 .5em;
+    }
+  }
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  .blocks-row {
+    .block {
+      margin: 0;
+      &.width-33 {
+        float: left;
+        margin: 0 0 1em;
+        width: 33%;
+      }
+      &.width-50 {
+        float: left;
+        margin: 0;
+        width: 50%;
+      }
+    }
+  }
+  
+}
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {}

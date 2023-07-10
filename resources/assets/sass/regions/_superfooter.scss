@@ -1,0 +1,30 @@
+#superfooter {
+	#superfooter-inner {
+	  background: $superfooter-color-back;
+		color: $superfooter-color-text;
+	  max-width: $max-width;
+		margin: auto;
+		padding: 2em 0;
+		text-align: center;
+	}
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {}
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {}

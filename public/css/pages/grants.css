@@ -1,0 +1,14 @@
+#main #main-inner #content {
+  padding: 2em 4em; }
+  #main #main-inner #content #content-area .grants h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+    padding: 0.25em 2em;
+    background: #999;
+    color: white; }
+  #main #main-inner #content #content-area .grants h3 {
+    font-size: 1.1em; }
+  #main #main-inner #content #content-area .grants ul {
+    margin: 0.75em 0; }
+
+/*# sourceMappingURL=grants.css.map */

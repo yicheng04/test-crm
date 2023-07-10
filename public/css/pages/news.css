@@ -1,0 +1,36 @@
+/* RETINA DISPLAY IMAGES */
+.articles {
+  zoom: 1; }
+  .articles:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .articles .article-wrap {
+    zoom: 1;
+    border-bottom: 1px solid #b1b1b1;
+    margin: 0 0 1em;
+    padding: 0 0 1em; }
+    .articles .article-wrap:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .articles .article-wrap .title {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin: 0 0 0.5em; }
+    .articles .article-wrap .date {
+      font-size: .875em;
+      font-weight: 600;
+      margin: 0 0 0.5em; }
+    .articles .article-wrap .teaser img {
+      display: none; }
+    .articles .article-wrap .teaser .media-embed {
+      display: none; }
+    .articles .article-wrap .teaser iframe {
+      display: none; }
+
+/*# sourceMappingURL=news.css.map */

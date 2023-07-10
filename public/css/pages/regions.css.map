@@ -1,0 +1,1 @@
+{"version":3,"sources":["regions.scss"],"names":[],"mappings":"AACI;EACQ,aAAa;EACb,WAAW,EAFH","file":"regions.css","sourcesContent":["#main #main-inner #content #content-area {\n    .regions-image {\n            float: right;\n            width: 20%;\n    }\n}\n"],"sourceRoot":"/source/"}

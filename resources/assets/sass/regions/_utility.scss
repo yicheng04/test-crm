@@ -1,0 +1,125 @@
+#utility {
+  background: $utility-color-back;
+  color: $utility-color-text;
+  display: none;
+  #utility-inner {
+    margin: 0 auto;
+    max-width: $max-full-width;
+    padding: 0;
+    .utility-nav {
+      position: fixed;
+      right: 0;
+      top: 4px;
+      z-index: 901;
+			ul {
+			  margin: 0;
+			  padding: 0;
+				li {
+					display: inline-block;
+					font-family: $utility-font;
+					font-size: .875em;
+					font-weight: $utility-font-weight;
+					list-style: none;
+					margin: 0 0 0 -4px;
+					padding: 0;
+					position: relative;
+					vertical-align: top;
+					/*&:after {
+            border-right: 1px solid $white;
+            content: "";
+            display: block;
+            height: 14px;
+            margin: -7px 0 0;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 1px;
+          }*/
+          &:first-child {
+            margin: 0;
+          }
+          &:last-child {
+            &:after {
+              border: none;
+              content: none;
+              display: none;
+              height: auto;
+              margin: auto;
+              position: inherit;
+              right: auto;
+              width: auto;
+            }
+          }
+          &.number {
+            color: $black;
+            font-size: 1em;
+            padding: .25em 0 0;
+          }
+					a {
+						color: $utility-color-text;
+						display: block;
+						padding: .375em 1em .5em;
+						&.green {
+  						background: $green;
+  						color: $white;
+  						&:hover {
+    						color: $white;
+  						}
+						}
+					}
+					a:hover {
+					  color: $utility-color-text-hover;
+					}
+				}
+			}
+		}
+  }
+}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  #utility {
+    display: block;
+    #utility-inner {
+      .utility-nav {
+        margin: 0 .625em 0 0;
+        ul {
+          li {
+            a {
+              &.green {
+                @include border-radius(0 0 4px 4px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {
+  
+  #utility {
+    #utility-inner {
+      .utility-nav {
+        ul {
+          li {
+            font-size: $utility-font-size;
+            &.number {
+              font-size: 1.5em;
+              padding: .25em 1em 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

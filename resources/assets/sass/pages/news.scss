@@ -1,0 +1,28 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+
+.articles {
+  @include clearfix;
+  .article-wrap {
+    @include clearfix;
+    border-bottom: 1px solid $gray;
+    margin: 0 0 1em;
+    padding: 0 0 1em;
+    .title {
+      font-size: 1.25em;
+      font-weight: 600;
+      margin: 0 0 .5em;
+    }
+    .date {
+      font-size: .875em;
+      font-weight: 600;
+      margin: 0 0 .5em;
+    }
+    .teaser {
+      img {display: none;}
+      .media-embed {display: none;}
+      iframe {display: none;}
+    }
+  }
+}

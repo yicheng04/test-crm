@@ -1,0 +1,93 @@
+#header {	
+	background: $header-color-back;
+	border-top: 4px solid $green;
+	-webkit-box-shadow: 0 4px 4px -3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 4px 4px -3px rgba(0,0,0,.25);
+	box-shadow: 0 4px 4px -3px rgba(0,0,0,.25);
+	color: $header-color-text;
+	height: 51px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 900;
+	#header-inner {
+		margin: 0 auto;
+		max-width: $max-full-width;
+		padding: 0;
+		position: relative;
+		.brand-wrapper {
+		  float: left;
+			margin: .5em 0 .5em .625em;
+			a {
+  			color: $white;
+  			display: block;
+  			&:hover {text-decoration: none;}
+			}
+			.title {
+			  color: $white;
+				display: none;
+				font-size: 1.75em;
+				margin: .5em 0 0 .25em;
+				vertical-align: middle;
+			}
+			.logo {
+			  display: inline-block;
+			  vertical-align: middle;
+			  width: 60px;
+			}
+		}
+	}
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  
+  #header {
+    height: 90px;
+    #header-inner {
+      .brand-wrapper {
+        margin: .875em 0 .875em .625em;
+        .title {
+          font-size: 2.25em;
+        }
+        .logo {
+          width: 110px;
+        }
+      }
+    }
+  }
+  
+}
+
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {
+  
+  #header {
+    height: 118px;
+    #header-inner {
+      .brand-wrapper {
+        margin: .875em;
+        .logo {
+          width: 160px;
+        }
+      }
+    }
+  }
+  
+}

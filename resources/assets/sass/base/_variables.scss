@@ -1,0 +1,174 @@
+//=====================================================
+// General
+//=====================================================
+
+// Client Branding Colors
+// manually add client brand standard colors in for overrides, or color specific needs
+// $brand-color: #HEXCODE;
+
+
+// General Colors
+$black: #000;
+$very-dark-gray: #333;
+$dark-gray: #5a5959;
+$medium-gray: #999;
+$gray: #b1b1b1;
+$light-gray: #dcdcdc;
+$very-light-gray: #f0f0f0;
+$white: #FFFFFF;
+
+$beige: #d1c5b2;
+$light-tan: #f4f2d4;
+$tan: #d3cf9f;
+$light-brown: #8e7e64;
+$brown: #5f4419;
+$dark-brown: #3f2a07;
+
+$light-red: #f37c81;
+$red: #ed1c24;
+$dark-red: #91090e;
+
+$light-orange: #fec37d;
+$orange: #f7941d;
+$dark-orange: #d47300;
+
+$very-light-yellow: #fdfdd5;
+$light-yellow: #ffee87;
+$yellow: #fee429;
+$dark-yellow: #d5bd12;
+
+$light-green: #b1eeb1;
+$bright-green: #0b8e28;
+$green: #044713;
+$dark-green: #007a00;
+
+$cyan: #00AEEF;
+$light-blue: #7fc0fc;
+$blue: #004bf5;
+$dark-blue: #0031a0;
+
+$light-purple: #bc99ec;
+$purple: #6d1ed7;
+$dark-purple: #370f6d;
+
+//=====================================================
+// Components
+//=====================================================
+
+//  Fonts
+$base-font-color: $very-dark-gray;
+$base-accent-color: darken( $green, 8% );
+$base-link-color: $green;
+$hover-link-color: darken( $green, 8% );
+$h16-color-text: $black;
+$h16-color-text-hover: $dark-gray;
+
+// Sizes
+$base-font-size: 1em;
+$base-line-height: 1.5em;
+
+// Typography
+$raleway: 'Raleway', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$handwriting: 'Covered By Your Grace', cursive;
+$sans-serif: helvetica, arial, verdana, sans-serif;
+$serif: georgia, serif;
+$base-font-family: $raleway;
+
+// Buttons
+$button-color-back: $green;
+$button-color-back-hover: darken( $green,2% );
+$button-color-back-active: $green;
+$button-color-text: $white;
+$button-border: none;
+$button-border-radius: 4px;
+
+// Borders
+$base-border-radius: em(3);
+$base-border-color: $light-gray;
+
+// Tables
+$table-color-border: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;
+
+
+
+//=====================================================
+// Regions
+//=====================================================
+
+// General
+$max-width: 1200px;
+$max-full-width: 100%;
+
+// Body
+$body-color-back: $green;
+$body-color-text: $base-font-color;
+
+// Utility
+$utility-color-back: transparent;
+$utility-color-text: $dark-gray;
+$utility-color-text-hover: $dark-gray;
+$utility-font: $roboto-condensed;
+$utility-font-size: 1.25em;
+$utility-font-weight: 400;
+
+// Header
+$header-color-back: $white;
+$header-color-text: $black;
+$header-color-text-hover: $black;
+
+// Nav
+$nav-wrapper-back: transparent;
+$nav-color-back: transparent;
+$nav-color-back-hover: transparent;
+$nav-color-text: $black;
+$nav-font: $roboto-condensed;
+$nav-font-size: 1.375em;
+$nav-font-weight: 700;
+$nav-line-height: $base-line-height;
+$nav-color-text-hover: $black;
+
+// SubNav Dropdown
+$subnav-dropdown-back: $green;
+$subnav-color-text: $white;
+$subnav-color-text-hover: #b9df1f;
+$subnav-font: $roboto;
+$subnav-font-size: 1em;
+$subnav-font-weight: 500;
+$subnav-line-height: $base-line-height;
+$subnav-color-back: $green;
+$subnav-color-back-hover: lighten( $green, 2% );
+
+// Mobile Nav
+$mobile-nav-back: $very-dark-gray;
+$mobile-nav-main-font-size: 1em;
+$mobile-nav-main-font-color: $white;
+$mobile-nav-sub-font-size: .75em;
+$mobile-nav-sub-font-color: $light-gray;
+
+// Banner/Hero
+$banner-color-back: $very-light-gray;
+$banner-inner-color-back: $very-light-gray;
+
+// Main
+$main-color-back: $white;
+$main-inner-color-back: $white;
+
+// Superfooter
+$superfooter-color-back: transparent;
+$superfooter-color-text: $black;
+$superfooter-color-text-hover: $dark-gray;
+
+// Footer
+$footer-color-back: transparent;
+$footer-inner-color-back: transparent;
+$footer-color-text: $white;
+
+// Transitions & Animations
+$transitions: all 0.2s ease;

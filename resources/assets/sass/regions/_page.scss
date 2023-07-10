@@ -1,0 +1,68 @@
+@import url(../css/normalize.css);
+
+body {
+  background: $body-color-back;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+
+a.skip-main {
+  height:1px;
+  left:-999px;
+  overflow:hidden;
+  position:absolute;
+  top:auto;
+  width:1px;
+  z-index:-999;
+}
+
+
+.media-embed,
+.media_embed {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	clear:both;
+	float:none !important;
+	margin:0 !important;
+}
+.media-embed iframe,
+.media_embed iframe,
+.media-embed object,
+.media_embed object,
+.media-embed embed,
+.media_embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100% !important;
+	height: 100% !important;
+}
+
+
+/* 480+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 480px) {}
+
+/* 768+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 768px) {}
+
+/* 960+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 960px) {}
+
+/* 1200+ styles 
+  --------------------------------------------------------------------- */
+@media all and (min-width: 1200px) {}

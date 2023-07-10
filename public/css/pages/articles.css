@@ -1,0 +1,59 @@
+/* RETINA DISPLAY IMAGES */
+.articles .article-wrap {
+  zoom: 1;
+  border-bottom: 1px solid #dadada;
+  margin: 0 0 1.5em; }
+  .articles .article-wrap:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .articles .article-wrap .article-image-wrap {
+    margin: 0 0 0.5em; }
+    .articles .article-wrap .article-image-wrap .article-image {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative; }
+      .articles .article-wrap .article-image-wrap .article-image img {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0; }
+  .articles .article-wrap .article {
+    font-size: .875em; }
+    .articles .article-wrap .article h2 {
+      font-family: "HelveticaNeueW01-75Bold";
+      font-size: 1.25em;
+      line-height: 1.125em;
+      margin: 0 0 0.375em; }
+    .articles .article-wrap .article h3 {
+      font-family: "HelveticaNeueW01-75Bold";
+      font-size: 1em;
+      line-height: 1;
+      margin: 0 0 1em; }
+
+#main #main-inner #content #content-area .article .article-image {
+  float: right;
+  width: 25%;
+  margin-left: 1em; }
+
+@media all and (min-width: 768px) {
+  .articles .article-wrap .article-image-wrap {
+    float: left;
+    margin: 0 4% 0.5em 0;
+    width: 21%; }
+  .articles .article-wrap .article {
+    float: left;
+    margin: 0;
+    width: 75%; } }
+
+@media all and (min-width: 1200px) {
+  .articles .article-wrap {
+    padding: 0 0 1em; }
+    .articles .article-wrap .article-image-wrap {
+      margin: 0 2% 0.5em 0;
+      width: 23%; } }
+
+/*# sourceMappingURL=articles.css.map */

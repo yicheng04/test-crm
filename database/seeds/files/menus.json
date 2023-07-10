@@ -1,0 +1,47 @@
+[
+	{
+		"slug": "main-guest",
+		"title": "Main - Guest",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "main-user",
+		"title": "Main- User",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "main-admin",
+		"title": "Main- Admin",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "utility-guest",
+		"title": "Utility - Guest",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "utility-user",
+		"title": "Utility- User",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "utility-admin",
+		"title": "Utility- Admin",
+		"body": "<ul class=\"menu\">\r\n  <li>\r\n    <a href='/content/first'>First</a>\r\n  </li>\r\n  <li>\r\n    <a href='/content/second'>Second</a>\r\n  </li>\r\n   <li>\r\n    <a href='/content/thirds'>Third</a>\r\n  </li>\r\n</ul>"
+	},
+	{
+		"slug": "superfooter-guest",
+		"title": "Superfooter - Guest",
+		"body": "<ul class=\"menu\">\r\n  <li><a href='/content/about'>About Test CRM</a>\r\n  <ul>\r\n      <li><a href=\"/content/history\">History</a></li>\r\n </li>\r\n  <li><a href='/news'>News</a></li>\r\n</ul>\r\n"
+	},
+	{
+		"slug": "superfooter-user",
+		"title": "Superfooter - User",
+		"body": "<ul class=\"menu\">\r\n  <li><a href='/content/about'>About Test CRM</a>\r\n  <ul>\r\n      <li><a href=\"/content/history\">History</a></li>\r\n </li>\r\n  <li><a href='/news'>News</a></li>\r\n</ul>\r\n"
+	},
+	{
+		"slug": "superfooter-admin",
+		"title": "Superfooter - Admin",
+		"body": "<ul class=\"menu\">\r\n  <li><a href='/content/about'>About Test CRM</a>\r\n  <ul>\r\n      <li><a href=\"/content/history\">History</a></li>\r\n </li>\r\n  <li><a href='/news'>News</a></li>\r\n</ul>\r\n"
+	}
+]

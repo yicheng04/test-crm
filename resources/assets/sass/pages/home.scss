@@ -1,0 +1,495 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+#banner {display: none;}
+
+
+#hero {
+  display: block;
+}
+
+#main {
+  #main-inner {
+    max-width: $max-full-width;
+    padding: 0;
+    #content-area {
+      overflow: hidden;
+      padding: 0;
+      position: inherit;
+    }
+  }
+}
+
+.drivers-block {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1em .625em;
+  h2 {
+    color: $green;
+    font-family: $roboto-condensed;
+    line-height: 1;
+    margin: 0 0 .5em;
+  }
+  h5 {
+    margin: 0 0 .5em;
+  }
+}
+
+
+.divisions-wrapper {
+  @include clearfix;
+  margin: 0;
+  .division {
+    background: $dark-gray;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 0 2px;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    &:hover {
+      .overlay {
+        background-color: rgba($green,.85);
+      }
+    }
+    .overlay {
+      @include transitions;
+      background-color: rgba(0,0,0,.75);
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .block-content {
+      color: #fff;
+      padding: 1em .625em;
+      text-align: left;
+      text-decoration: none;
+      .icon {
+        float: left;
+        width: 50px;
+      }
+      h2 {
+        font-family: $roboto;
+        font-size: 1.25em;
+        font-weight: 500;
+        margin: 0 0 .125em 60px;
+      }
+      p {
+        font-size: .875em;
+        font-weight: 400;
+        line-height: 1.375em;
+        margin: 0 0 0 60px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.row-wrapper {
+  @include clearfix;
+  margin: 0 0 1px;
+  .veterans-block {
+    background: url("/img/american-flag.png") no-repeat scroll -420px -450px;
+    padding: 1em;
+    .block-content {
+      background: $white;
+      padding: .875em .625em;
+      text-align: center;
+      h2 {
+        font-family: $roboto-condensed;
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0 0 .875em;
+      }
+      .btn {
+        width: auto;
+      }
+    }
+  }
+  .safety {
+    background: url("/img/road.png") no-repeat scroll 0 0 / cover;
+    padding: 1em;
+    .block-content {
+      background: rgba( $light-gray,.9 );
+      padding: .875em .625em;
+      text-align: center;
+      h2 {
+        font-family: $roboto;
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1;
+        margin: 0 0 .875em;
+      }
+      .btn {
+        width: auto;
+      }
+    }
+  }
+}
+
+
+
+.news-wrapper {
+  padding: 0 .625em;
+  text-align: center;
+  .block-title {
+    border-bottom: 1px solid $gray;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0 2em;
+    padding: 0 0 .375em;
+    text-align: center;
+  }
+  .blocks {
+    @include clearfix;
+    padding: 0 .625em;
+    text-align: left;
+    .view-all-btn {
+      @include clearfix;
+      clear: both;
+      margin: 0 0 2.5em;
+      text-align: center;
+      .btn {
+        width: auto;
+      }
+    }
+    .block {
+      margin: 0 0 2.5em;
+      &:last-child {
+        margin: 0;
+      }
+      &.news-block {
+        font-size: .875em;
+        font-weight: 600;
+        line-height: 1.375em;
+        .date {
+          margin: 0 0 .25em;
+        }
+        .title {
+          font-size: 1.25em;
+          margin: 0 0 .5em;
+          a {
+            color: $black;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+        .teaser {
+          img {display: none;}
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (min-width: 480px) {
+  
+  #banner {display: block;}
+  
+}
+
+
+@media all and (min-width: 768px) {
+
+  .drivers-block {
+    background: url("/img/driver-guitar.png") no-repeat scroll 98% bottom / 400px auto;
+    padding: 2em 20em 2em 1.5em;
+    h2 {
+      font-size: 2em;
+      margin: 0 0 .75em;
+    }
+  }
+  
+  .news-wrapper {
+    margin: 0;
+    padding: 0;
+    .block-title {
+      font-size: 1.25em;
+    }
+    .blocks {
+      @include clearfix;
+      padding: 0;
+      .block {
+        float: left;
+        margin: 0;
+        padding: 0 2%;
+        width: 33.333%;
+        &.news-block {
+          margin: 0 0 3em;
+        }
+      }
+    }
+  }
+
+  .divisions-wrapper {
+    background: $light-gray url("/img/logo-transparent.png") no-repeat scroll 95% 95%;
+    margin: 0 -1px;
+    .division {
+      background: transparent url("/img/guitar.png") no-repeat scroll 0 0 / cover;
+      border: 1px solid $light-gray;
+      float: left;
+      margin: 0;
+      width: 50%;
+      z-index: 0;
+      &:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+      }
+      &:hover {
+        .overlay {
+          background-color: rgba($green,.85);
+        }
+      }
+      &.drivers {
+        background-image: url("/img/driver-bkgd.png");
+      }
+      &.lease {
+        background-image: url("/img/lease-bkgd.png");
+      }
+      &.part-time {
+        background-image: url("/img/parttime-bkgd.png");
+      }
+      &.intermodal {
+        background-image: url("/img/intermodal-bkgd.png");
+      }
+      .overlay {
+        @include transitions;
+        background-color: rgba(0,0,0,.75);
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      .block-content {
+        bottom: 0;
+        color: #fff;
+        font-size: .75em;
+        line-height: 1.375em;
+        margin: 0;
+        padding: 2%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+        .icon {
+          float: none;
+          display: inline-block;
+          padding: 1em 0;
+          width: 80px;
+        }
+        h2 {
+          font-size: 1.5em;
+          margin: 0 0 .5em;
+        }
+        p {
+          font-size: 1em;
+          margin: 0;
+          padding: 0 4%;
+        }
+      }
+    }
+  }
+  
+  
+  .row-wrapper {
+    .veterans-block {
+      padding: 1.5em 1em;
+      .block-content {
+        padding: 1.5em 1em;
+        h2 {
+          display: inline-block;
+          font-size: 1.75em;
+          position: relative;
+          &:before {
+            color: $red;
+            content: "\2605";
+            display: block;
+            left: -1.75em;
+            position: absolute;
+            top: 0;
+          }
+          &:after {
+            color: $red;
+            content: "\2605";
+            display: block;
+            right: -1.75em;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+    .safety {
+      padding: 1.5em 1em;
+      .block-content {
+        padding: 1.5em 2em;
+        text-align: left;
+        h2 {
+          font-size: 2.25em;
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media all and (min-width: 960px) {
+
+  .drivers-block {
+    background-size: 460px auto;
+    padding: 2em 30em 2em 1.5em;
+  }
+
+  .divisions-wrapper {
+    .division {
+      .block-content {
+        font-size: .875em;
+        h2 {
+          font-size: 1.75em;
+        }
+      }
+    }
+  }
+  
+  .row-wrapper {
+    @include clearfix;
+    .left, .right {
+      float: left;
+      width: 50%;
+    }
+    .veterans-block {
+      .block-content {
+        h2 {
+          margin: 0 1em .875em;
+          &:before {left: -1em;}
+          &:after {right: -1em;}
+        }
+      }
+    }
+  }
+  
+  
+  .news-wrapper {
+    position: relative;
+    .blocks {
+      .block {
+        float: left;
+        margin: 0;
+        width: 33.33%;
+        &.news-block {
+          padding: 0 2em 0 0;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+@media all and (min-width: 1200px) {
+
+  .drivers-block {
+    background-size: inherit;
+    padding: 2em 36em 2em 1.5em;
+  }
+
+  .divisions-wrapper {
+    .division {
+      width: 33.333%;
+      &:before {
+        padding-top: 56.25%;
+      }
+    }
+  }
+  
+  .row-wrapper {
+    .veterans-block {
+      .block-content {
+        h2 {
+          margin: 0 0 .875em;
+          &:before {left: -1.375em;}
+          &:after {right: -1.375em;}
+        }
+      }
+    }
+  }
+  
+  .news-wrapper {
+    .block-title {
+      margin: 0 0 3em;
+    }
+    .blocks {
+      padding: 0;
+      .block {
+        &.news-block {
+          margin: 0 0 4em;
+        }
+      }
+      .view-all-btn {
+        .btn {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+@media all and (min-width: 1400px) {
+  
+  .row-wrapper {
+    .veterans-block {
+      .block-content {
+        h2 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+  
+  .divisions-wrapper {
+    .division {
+      .block-content {
+        font-size: 1em;
+        .icon {
+          width: 90px;
+        }
+      }
+    }
+  }
+  
+  .news-wrapper {
+    padding: 2em .625em;
+    .blocks {
+      .block {
+        &.news-block {
+          padding: 0 2%;
+        }
+      }
+    }
+  }
+  
+}
